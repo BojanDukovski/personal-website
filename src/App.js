@@ -20,7 +20,7 @@ function App() {
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cutfilm.com%2Funderconstruction%2Funderconstructionyr.png&f=1&nofb=1"
                         height="100px" width="200px" alt="image" />
                 </p>
-
+                <p>New content coming soon</p>
             </div>
         </div>
     );
