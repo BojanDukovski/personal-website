@@ -10,14 +10,10 @@ function App() {
         fontSize: '90px',
         fontWeight: 'bold',
     };
-    const bgColor = {
-        backgroundColor: "black"
-    };
     return (
-        <div style={bgColor}>
+        <div>
             <div style={styles} className={'mt-5 text-center container'}>
                 <p>The website is under construction!</p>
-                <p>New content coming soon</p>
             </div>
         </div>
     );
