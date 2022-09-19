@@ -4,8 +4,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 const header = (props) => {
     return (
         <div>
-
-
             <nav className="navbar navbar-dark bg-transparent fixed-top">
                 <div className="container-fluid">
 
@@ -23,7 +21,7 @@ const header = (props) => {
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="/index">Home</a>
+                                    <a className="nav-link active" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/projects">Projects</a>
@@ -35,11 +33,9 @@ const header = (props) => {
                             </ul>
                         </div>
                     </div>
-                    <a className="navbar-brand" href="/index">Bojan Dukovski</a>
+                    <a className="navbar-brand" href="/">Bojan Dukovski</a>
                 </div>
             </nav>
-
-
         </div>
     )
 };
