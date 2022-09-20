@@ -4,8 +4,9 @@ const repository = {
     fetchPictures: () => {
         return axios.get("/pictures");
     },
-    addPictures: (pictures) => {
-        return axios.post("/addPictures", pictures);
+    addPictures: (formData) => {
+        console.log("ready")
+        return axios.post("/addPictures", formData);
     }
 };
 
