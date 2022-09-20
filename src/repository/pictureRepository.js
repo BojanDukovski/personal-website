@@ -5,7 +5,6 @@ const repository = {
         return axios.get("/pictures");
     },
     addPictures: (formData) => {
-        console.log("ready")
         return axios.post("/addPictures", formData);
     }
 };

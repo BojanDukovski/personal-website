@@ -22,8 +22,8 @@ class Form extends React.Component {
         for (let i=0; i<pictures.length; i++ ) {
             formData.append('pictures', pictures[i]);
         }
-        axios.post("https://bojandukovski-backend.herokuapp.com/api/addPictures", formData);
-        //this.props.onAddPictures(formData);
+        //axios.post("https://bojandukovski-backend.herokuapp.com/api/addPictures", formData);
+        this.props.onAddPictures(formData);
     }
 
     render(){
