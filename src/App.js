@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Cover from './images/background.jpg';
 import Pictures from "./components/Pictures/pictures";
 import Form from './components/Pictures/addPicturesForm';
+import AboutMe from './components/AboutMe/aboutMe';
 
 class App extends React.Component {
 
@@ -29,6 +30,7 @@ class App extends React.Component {
                                     <Route path="/addPicturesForm"
                                             element={<Form 
                                             onAddPictures={this.addPictures}/>}/>
+                                    <Route path='/aboutMe' element={<AboutMe/>}/>
                             </Routes>
                         </main>
                     </BrowserRouter>
