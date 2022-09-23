@@ -6,6 +6,9 @@ const repository = {
     },
     addPictures: (formData) => {
         return axios.post("/addPictures", formData);
+    },
+    fetchProjects: () => {
+        return axios.get("/projects");
     }
 };
 

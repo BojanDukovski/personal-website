@@ -8,13 +8,15 @@ import Cover from './images/background.jpg';
 import Pictures from "./components/Pictures/pictures";
 import Form from './components/Pictures/addPicturesForm';
 import AboutMe from './components/AboutMe/aboutMe';
+import Projects from './components/Projects/projects';
 
 class App extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            pictures: []
+            pictures: [],
+            projects: []
         }
     }
 
@@ -31,6 +33,7 @@ class App extends React.Component {
                                             element={<Form 
                                             onAddPictures={this.addPictures}/>}/>
                                     <Route path='/aboutMe' element={<AboutMe/>}/>
+                                    <Route path='/projects' element={<Projects projects={this.state.projects}/>}/>
                             </Routes>
                         </main>
                     </BrowserRouter>
@@ -39,6 +42,7 @@ class App extends React.Component {
     };
     componentDidMount() {
         this.getAllPictures();
+        this.loadProjects();
     };
     getAllPictures = () => {
         repository.fetchPictures()
@@ -52,6 +56,14 @@ class App extends React.Component {
         repository.addPictures(pictures)
         .then(() => {
             this.getAllPictures();
+        })
+    };
+    loadProjects = () => {
+        repository.fetchProjects()
+        .then((data) => {
+            this.setState({
+                projects: data.data
+            })
         })
     }
     

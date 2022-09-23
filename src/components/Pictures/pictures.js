@@ -8,11 +8,6 @@ class Pictures extends React.Component {
         super(props);
     };
 
-    
-    consolePrint = (term) => {
-        console.log(term);    
-    }
-
     render () {
         const pictures = this.getAllPictures();
         return (
