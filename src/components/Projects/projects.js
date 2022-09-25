@@ -9,7 +9,7 @@ class Projects extends React.Component {
     getData() {
         return this.props.projects.map((term) => {
             return (
-                <div id="container" className="container p-5 text-center rounded-5 mb-3" style={{"backgroundColor": "black", "border": "solid lightblue 20px"}}>
+                <div id="container" className="container p-5 text-center rounded-5 mb-3 text-light" style={{"backgroundColor": "black", "border": "solid #2A5757 20px"}}>
                     <p className="display-3" id="name">{term.name}</p>
                     <p style={{"fontSize": "18px"}} id="description">{term.description}</p>
                     <p>{term.optionalDesctiption}</p>

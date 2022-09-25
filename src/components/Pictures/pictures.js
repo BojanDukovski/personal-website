@@ -27,6 +27,7 @@ class Pictures extends React.Component {
 
     buildImagePath = (path) => {
         return "https://bojandukovski-backend.herokuapp.com/api/picture?path=" + path;
+        //return "http://localhost:8080/api/picture?path=" + path;
     }
 
     getAllPictures = () => {
